@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		C329A746289D544D000C3EAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C329A745289D544D000C3EAE /* AppDelegate.swift */; };
 		C329A748289D544D000C3EAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C329A747289D544D000C3EAE /* SceneDelegate.swift */; };
-		C329A74A289D544D000C3EAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C329A749289D544D000C3EAE /* ViewController.swift */; };
+		C329A74A289D544D000C3EAE /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C329A749289D544D000C3EAE /* SignIn.swift */; };
 		C329A74D289D544D000C3EAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C329A74B289D544D000C3EAE /* Main.storyboard */; };
 		C329A74F289D544F000C3EAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C329A74E289D544F000C3EAE /* Assets.xcassets */; };
 		C329A752289D544F000C3EAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C329A750289D544F000C3EAE /* LaunchScreen.storyboard */; };
+		C329A75A289D5B3F000C3EAE /* NewAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = C329A759289D5B3F000C3EAE /* NewAccount.swift */; };
+		C329A75D289D6C0A000C3EAE /* IndieFlower-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C329A75C289D6C0A000C3EAE /* IndieFlower-Regular.ttf */; };
+		C329A75F289E93CD000C3EAE /* PirataOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C329A75E289E93CD000C3EAE /* PirataOne-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C329A742289D544D000C3EAE /* Tasarim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasarim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C329A745289D544D000C3EAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C329A747289D544D000C3EAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C329A749289D544D000C3EAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C329A749289D544D000C3EAE /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		C329A74C289D544D000C3EAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C329A74E289D544F000C3EAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C329A751289D544F000C3EAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C329A753289D544F000C3EAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C329A759289D5B3F000C3EAE /* NewAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccount.swift; sourceTree = "<group>"; };
+		C329A75C289D6C0A000C3EAE /* IndieFlower-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IndieFlower-Regular.ttf"; sourceTree = "<group>"; };
+		C329A75E289E93CD000C3EAE /* PirataOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PirataOne-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,24 @@
 			children = (
 				C329A745289D544D000C3EAE /* AppDelegate.swift */,
 				C329A747289D544D000C3EAE /* SceneDelegate.swift */,
-				C329A749289D544D000C3EAE /* ViewController.swift */,
+				C329A749289D544D000C3EAE /* SignIn.swift */,
+				C329A759289D5B3F000C3EAE /* NewAccount.swift */,
 				C329A74B289D544D000C3EAE /* Main.storyboard */,
 				C329A74E289D544F000C3EAE /* Assets.xcassets */,
 				C329A750289D544F000C3EAE /* LaunchScreen.storyboard */,
 				C329A753289D544F000C3EAE /* Info.plist */,
+				C329A75B289D6A07000C3EAE /* Fonts */,
 			);
 			path = Tasarim;
+			sourceTree = "<group>";
+		};
+		C329A75B289D6A07000C3EAE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C329A75C289D6C0A000C3EAE /* IndieFlower-Regular.ttf */,
+				C329A75E289E93CD000C3EAE /* PirataOne-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +142,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C329A75F289E93CD000C3EAE /* PirataOne-Regular.ttf in Resources */,
 				C329A752289D544F000C3EAE /* LaunchScreen.storyboard in Resources */,
 				C329A74F289D544F000C3EAE /* Assets.xcassets in Resources */,
+				C329A75D289D6C0A000C3EAE /* IndieFlower-Regular.ttf in Resources */,
 				C329A74D289D544D000C3EAE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +157,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C329A74A289D544D000C3EAE /* ViewController.swift in Sources */,
+				C329A74A289D544D000C3EAE /* SignIn.swift in Sources */,
 				C329A746289D544D000C3EAE /* AppDelegate.swift in Sources */,
+				C329A75A289D5B3F000C3EAE /* NewAccount.swift in Sources */,
 				C329A748289D544D000C3EAE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
